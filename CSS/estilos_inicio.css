@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../Recursos/FUENTES/Montserrat-Regular.ttf);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #270208;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    z-index: 10;
+    border-bottom: 2px solid #270208;
+}
+
+.nav1, .nav2, .nav3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C20A29;
+}
+
+.nav1 {
+    width: 33vw;
+    color: #270208;
+    justify-content: right;
+}
+
+.logo {
+    padding: 0.5rem;
+    width: auto;
+    height: 100%;
+}
+
+.nav2 {
+    width: 34vw;
+}
+
+
+.nav3 {
+    width: 33vw;
+    justify-content: left;
+}
+
+.nav3 ul { /*toda la lista no ordenada*/
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.nav3 li { /*cada item de la lista*/
+    text-align: center;
+}
+
+.nav3 a { /*texto*/
+    text-decoration: none;
+    color: #270208;
+    font-weight: bold;
+}
+
+.nav3 a:hover { /*al pasar el mouse*/
+    color: #F9B4BF;
+}
+
+#seccion_inicio, #seccion_funciones, #seccion_planes, #seccion_contacto {
+    height: 100vh;
+    width: 100vw;
+}
+
+.videoFondo {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    position: absolute;
+    justify-content: center;
+}
+
+video {
+    height: 100vh;
+    width: 100vw;
+}
+
+.contenidoInicio{ /*lo que hay sobre el video*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: #270208c2;
+    color: #F9B4BF;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.contenidoSup, .contenidoInf { /**/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+}
+
+.contenidoSup {
+    flex-direction: column;
+
+}
+
+.contenidoInf {
+    flex-direction: row;
+}
+
+.divisionesContenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 13vw;
+    height: 25vh;
+    margin: 1rem;
+    border: 2px;
+    border-radius: 10px;
+    border-style: solid;
+}
+
+.texto_cont {
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    text-align: center;
+}
+
+.contenidoSupFun, .contenidoInfFun { /*al presionar funciones*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50hw;
+}
+
+.contenidoSupFun { /*funciones*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contenidoSupFun input[type="text"] { /*ingreso de las funciones*/
+    position: absolute;
+    width: 50%;
+    padding: 10px 40px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+}
+
+.contenidoSupFun button { /*boton funciones*/
+    position: absolute;
+    right: 25.6vw;
+    padding: 5px 10px;
+    border: none;
+    background-color: #AE0925;
+    color: white;
+    font-size: 14px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.contenidoSupFun button:hover { /*cursor sobre el boton*/
+    background-color: #F3163B;
+}
+
+.fondofunsup {
+    height: 60vh;
+    width: 100vw;
+}
+
+.contenidoInfFun { /*funciones*/
+    background-color: #FBB1BE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divisionesContenidoFun { /*funciones*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33vw;
+    height: 30vh;
+    background-color: #FBB1BE;
+    border-left: #270208;
+    border-left: 2px;
+}
+
+.titulo_info_fun {
+    font-size: large;
+    color: #4E0410;
+}
+
+.info_fun {
+    font-size: small;
+    color: #88071D;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 15vh;
+}
+
+#seccion_planes {
+    display: flex;
+    flex-direction: column;
+    background-color: #FA9EAD;
+}
+
+.planes_med {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.planes_inf, .planes_sup {
+    width: 100vw;
+    height: 15vh;
+}
+
+.semanal, .mensual, .semestral {
+    width: 26vw;
+    height: 70vh;
+    margin: 2rem;
+    background-color: #F6516C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #4E0410;
+    flex-direction: column;
+}
+
+.titulo_plan {
+    font-size: xx-large;
+    color: #4E0410;
+}
+
+.descripcion_plan {
+    font-size: large;
+    color: #88071D;
+}
+
+.precio_plan {
+    font-size: x-large;
+    color: #4E0410;
+}
+
+#seccion_contacto {
+    background-color: #ffe4e1;
+}
+
+.mapaGoogle, .columnaDatos { /*contacto*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+}
+
+#mapa {
+    width: 100vw;
+    height: 50vh;
+}
+
+.datosContacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 50vh;
+    
+}
+
+.formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 50vh;
+
+}
+
+.titulo {
+    font-size: xx-large;
+    padding: 0.3rem;
+    margin-top: 7rem;
+}
+
+.subtitulo {
+    font-size: medium;
+    padding: 0.3rem;
+}
+
+.listaContacto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+}
+
+.li_titulo, .li_texto {
+    color:#270208;
+    margin: 2px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#fila1 {
+    margin-bottom: 1rem;
+}
+
+#fila2 {
+    margin-bottom: 1rem;
+}
+
+#fila3 {
+    margin-bottom: 1rem;
+}
+
+#nombre, #asunto{
+    width: 250px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #FEECEF;
+    border-radius: 3px;
+    border-color: #F3163B;
+    border: 1.5px;
+    border-style: solid;
+}
+
+#mail {
+    width: 500px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #FEECEF;
+    border-radius: 3px;
+    border-color: #F3163B;
+    border: 1.5px;
+    border-style: solid;
+}
+
+#mensaje {
+    width: 500px;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #FEECEF;
+    border-radius: 3px;
+    border-color: #F3163B;
+    border: 1.5px;
+    border-style: solid;
+}
+
+#enviar {
+    width: 500px;
+    color: #270208;
+    margin-bottom: 30px;
+    background-color: #F98B9D;
+    border-radius: 3px;
+    border-color: #270208;
+    border: 2px;
+    border-style: solid;
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/estilos_inicio.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <title>Proyecto</title>
+    </head>
+
+    <body>
+        <nav>
+            <div class="nav1">
+                <img class="logo" src="Recursos/IMG/logo_of.png">
+                &nbsp; &nbsp; &nbsp;
+                <b>ArguMentor.com</b>
+            </div>
+            <div class="nav2">
+            </div>
+            <div class="nav3">
+                <ul>
+                    <li><a href="#seccion_inicio">Inicio</a></li>
+                    <li><a href="#seccion_funciones">Funciones</a></li>
+                    <li><a href="#seccion_planes">Planes</a></li>
+                    <li><a href="#seccion_contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section id="seccion_inicio">
+        <div class="videoFondo">
+            <video id="cover" autoplay muted loop>
+                <source src="Recursos/VIDEOS/debate.mp4" type="video/mp4">
+            <script>
+                let vid = document.getElementById("cover");          
+                function setPlaySpeed() { 
+                  vid.playbackRate = 0.7;
+                }
+                setPlaySpeed()
+            </script>
+        </div>  
+        <div class="contenidoInicio">
+            <div class="contenidoSup">
+                <div class="titulo">
+                    <b>Bienvenido/a a ArguMentor</b>
+                </div>
+                <div class="subtitulo">
+                    "Conversa, argumenta, gana."
+                </div>
+            </div>
+            <div class="contenidoInf">
+                <div class="divisionesContenido">
+                    <i class="fa-regular fa-comment-dots fa-2x"></i>
+                    <div class="texto_cont">
+                        Mejora tu oración
+                    </div>
+                </div>
+                <div class="divisionesContenido">
+                    <i class="fa-solid fa-user-group fa-2x"></i>
+                    <div class="texto_cont">
+                        Trabaja en equipo
+                    </div>
+                </div>
+                <div class="divisionesContenido">
+                    <i class="fa-solid fa-question fa-2x"></i>
+                    <div class="texto_cont">
+                        Controla las preguntas
+                    </div>
+                </div>
+                <div class="divisionesContenido">
+                    <i class="fa-solid fa-book fa-2x"></i>
+                    <div class="texto_cont">
+                        Busca información confiable
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="seccion_funciones">
+        <div class="contenidoFunciones">
+            <div class="contenidoSupFun">
+                <img class="fondofunsup" src="Recursos/IMG/f_funciones.jpg">
+                <input type="text" placeholder="Buscar...">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="contenidoInfFun">
+                <div class="divisionesContenidoFun">
+                    <div class="titulo_info_fun"><b>Formación</b></div>
+                    <br>
+                    <div class="info_fun">
+                        <p>Contamos con una completa formación y educación,</p>
+                        <p>de mano de reconocidos oradores y debatientes,</p>
+                        <p>profesionales y amateurs.</p>
+                    </div>
+    
+                </div>
+                <div class="divisionesContenidoFun">
+                    <div class="titulo_info_fun"><b>Certificación</b></div>
+                    <br>
+                    <div class="info_fun">
+                        <p>Al finalizar la formación, se otortga un </p>
+                        <p>certificado, detallando el tiempo dedicado y</p>
+                        <p>capacidades adquiridas.</p>
+                    </div>
+                </div>
+                <div class="divisionesContenidoFun">
+                    <div class="titulo_info_fun"><b>Flexibilidad</b></div>
+                    <br>
+                    <div class="info_fun">
+                        <p>Disponemos de una amplia gama de horarios y </p>
+                        <p>planes de formación, pudiendo ajustarnos a tus</p>
+                        <p>horarios y preferencias.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+            
+    <section id="seccion_planes">
+        <div class="planes_sup"></div>
+        <div class="planes_med">
+            <div class="semanal">
+                <div class="titulo_plan">
+                    <b>Plan Semanal</b> <br><br>
+                </div>
+                <div class="descripcion_plan">
+                    - Duración: Una semana <br>
+                    - Cantidad de clases: 3 <br>
+                    - Horas totales: 6 horas 
+                </div>
+                <div class="precio_plan">
+                    <br><b>UYU $6.000</b>
+                </div>
+            </div>
+            <div class="mensual">
+                <div class="titulo_plan">
+                    <b>Plan Mensual</b> <br><br>
+                </div>
+                <div class="descripcion_plan">
+                    - Duración: Cuatro semanas <br>
+                    - Cantidad de clases: 12 <br>
+                    - Horas totales: 24 horas 
+                </div>
+                <div class="precio_plan">
+                    <br><b>UYU $18.000</b>
+                </div>
+            </div>
+            <div class="semestral">
+                <div class="titulo_plan">
+                    <b>Plan Semestral</b> <br><br>
+                </div>
+                <div class="descripcion_plan">
+                    - Duración: Veinticuatro semanas <br>
+                    - Cantidad de clases: 72 <br>
+                    - Horas totales: 144 horas 
+                </div>
+                <div class="precio_plan">
+                    <br><b>UYU $72.000</b>
+                </div>
+            </div>
+        </div>
+        <div class="planes_inf"></div>
+    </section>
+                
+    <section id="seccion_contacto">
+        <div class="contenidoContacto">
+            <div class="mapaGoogle">
+                <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15567.445982936375!2d-56.19700983649867!3d-34.89007446336608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f803bdb8919a1%3A0x2e117452a699c880!2sPalacio%20Legislativo!5e0!3m2!1sen!2suy!4v1730642348799!5m2!1sen!2suy" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="columnaDatos">
+                <div class="datosContacto">
+                    <ul class="listaContacto">
+                        <li class="li_titulo">
+                            <i class="fa-solid fa-location-dot"></i> 
+                            &nbsp;
+                            Dirección
+                        </li>
+                        <li class="li_texto">
+                            Palacio Legislativo <br><br>
+                        </li>
+                            
+                        <li class="li_titulo">
+                            <i class="fa-solid fa-phone"></i>
+                            &nbsp;
+                            Telefono
+                        </li>
+                        <li class="li_texto"> 
+                             094 555 891  <br><br>
+                        </li>
+
+                        <li class="li_titulo">
+                            <i class="fa-solid fa-envelope"></i> 
+                            &nbsp;
+                            Correo Electrónico
+                        </li>
+                        <li class="li_texto"> 
+                            atencionalcliente@argumentor.com  <br><br>
+                        </li>
+                    </ul>
+                </div>
+                <div class="formulario">
+                    <form>
+                        <class id="fila1">
+                            <label>
+                                <input type="text" name="nombre" id="nombre" maxlength="20" minlength="3" title="Nombre"
+                                placeholder="Nombre" onkeydown="noEspacios(event)" required>
+                            </label>
+    
+                            <label>
+                                <input type="text" name="asunto" id="asunto" maxlength="30" minlength="3" title="Asunto"
+                                placeholder="Asunto" onkeydown="noEspacios(event)" required>
+                            </label>    
+                        </class>
+
+                        <class id="fila2">
+                            <label>
+                                <input type="email" name="mail" id="mail" title="Mail"
+                                placeholder="e-Mail" onkeydown="noEspacios(event)" required>
+                            </label>
+                        </class>
+
+                        <class id="fila3">
+                            <label>
+                                <input type="text" name="mensaje" id="mensaje" maxlength="300" minlength="3" title="Mensaje"
+                                placeholder="Mensaje" onkeydown="noEspacios(event)" required>
+                            </label>
+                        </class>
+
+                        <div id="advertencia" style="color: #E90C31;"></div>
+                        <button type="submit" id="enviar"><b>Enviar</b></button>
+        
+                    </div>
+                </div>
+            </div>
+        </section>     
+    </body>
+</html>
